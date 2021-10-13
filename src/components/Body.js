@@ -6,7 +6,7 @@ import Commands from './body/Commands';
 class Body extends React.Component {
   render() {
     return (
-      <div className='Content'>
+      <div className='Body' style={{paddingTop:'100px'}}>
         <Switch>
           <Route path='/commands'>
             <Commands />
@@ -18,6 +18,4 @@ class Body extends React.Component {
       </div>
     );
   }
-}
-
-export default Body;
+} export default Body;

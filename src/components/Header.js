@@ -26,7 +26,7 @@ class Header extends React.Component {
 class Brand extends React.Component {
   render() {
     return (
-      <span className='navbar-brand user-select-none'>
+      <span className='navbar-brand user-select-none fs-4'>
         <img src={this.props.image} alt='Logo' width='40' height='40' className='.d-inline-block me-2 mb-2'></img>
         {this.props.name}
       </span>
