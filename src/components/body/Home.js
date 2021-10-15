@@ -27,14 +27,14 @@ class Welcome extends React.Component {
       <div className='row align-items-center justify-content-evenly'>
 
         {/* Left col welcome message */}
-        <div className='col-sm-5 text-center text-sm-start user-select-none'>
+        <div className='col-sm-5 text-center text-sm-start'>
           <h1 className='text-warning'>Beldum Bot</h1>
           <div className='fs-5'>
             <p>A random Discord bot that does random things.</p>
             <p>May add some other cool stuff in the future. ¯\_(ツ)_/¯</p>
           </div>
           <div className='d-grid d-sm-flex gap-2'>
-            <a className="btn btn-lg btn-outline-warning" tabIndex="-1" role="button" aria-disabled="true" target='_blank' rel='noreferrer' href='https://discord.com/api/oauth2/authorize?client_id=454764425090433034&permissions=19456&scope=bot%20applications.commands'>Invite Bot</a>
+            <a className="btn btn-lg btn-outline-warning" role="button" target='_blank' rel='noreferrer' href='https://discord.com/api/oauth2/authorize?client_id=454764425090433034&permissions=19456&scope=bot%20applications.commands'>Invite Bot</a>
             <Link className='btn btn-lg btn-warning' to='/commands'>See Commands</Link>
           </div>
         </div>
@@ -60,13 +60,13 @@ class ContentRow1 extends React.Component {
         </div>
 
         {/* Right col Discord.js message */}
-        <div className='col-sm-5 text-center text-sm-start user-select-none'>
+        <div className='col-sm-5 text-center text-sm-start'>
           <h2 className='text-warning'>Discord.js</h2>
           <div className='fs-5'>
             <p>Built with the Discord.js library.</p>
           </div>
           <div className='d-grid d-sm-flex gap-2'>
-            <a className="btn btn-lg btn-outline-primary" tabIndex="-1" role="button" aria-disabled="true" target='_blank' rel='noreferrer' href='https://discord.js.org/'>Discord.js</a>
+            <a className="btn btn-lg btn-outline-primary" role="button" target='_blank' rel='noreferrer' href='https://discord.js.org/'>Discord.js</a>
           </div>
         </div>
 
