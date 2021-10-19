@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/beldum-bot-site/static/js/main.8ac545cf.chunk.js",
+    "main.js.map": "/beldum-bot-site/static/js/main.8ac545cf.chunk.js.map",
+    "runtime-main.js": "/beldum-bot-site/static/js/runtime-main.f9d6d915.js",
+    "runtime-main.js.map": "/beldum-bot-site/static/js/runtime-main.f9d6d915.js.map",
+    "static/js/2.5d4dc2cd.chunk.js": "/beldum-bot-site/static/js/2.5d4dc2cd.chunk.js",
+    "static/js/2.5d4dc2cd.chunk.js.map": "/beldum-bot-site/static/js/2.5d4dc2cd.chunk.js.map",
+    "index.html": "/beldum-bot-site/index.html",
+    "static/js/2.5d4dc2cd.chunk.js.LICENSE.txt": "/beldum-bot-site/static/js/2.5d4dc2cd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9d6d915.js",
+    "static/js/2.5d4dc2cd.chunk.js",
+    "static/js/main.8ac545cf.chunk.js"
+  ]
+}
