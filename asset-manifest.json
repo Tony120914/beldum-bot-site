@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/beldum-bot-site/static/js/main.dfcfb078.chunk.js",
-    "main.js.map": "/beldum-bot-site/static/js/main.dfcfb078.chunk.js.map",
+    "main.js": "/beldum-bot-site/static/js/main.26658791.chunk.js",
+    "main.js.map": "/beldum-bot-site/static/js/main.26658791.chunk.js.map",
     "runtime-main.js": "/beldum-bot-site/static/js/runtime-main.f9d6d915.js",
     "runtime-main.js.map": "/beldum-bot-site/static/js/runtime-main.f9d6d915.js.map",
-    "static/js/2.bc830748.chunk.js": "/beldum-bot-site/static/js/2.bc830748.chunk.js",
-    "static/js/2.bc830748.chunk.js.map": "/beldum-bot-site/static/js/2.bc830748.chunk.js.map",
+    "static/js/2.32de0b22.chunk.js": "/beldum-bot-site/static/js/2.32de0b22.chunk.js",
+    "static/js/2.32de0b22.chunk.js.map": "/beldum-bot-site/static/js/2.32de0b22.chunk.js.map",
     "index.html": "/beldum-bot-site/index.html",
-    "static/js/2.bc830748.chunk.js.LICENSE.txt": "/beldum-bot-site/static/js/2.bc830748.chunk.js.LICENSE.txt"
+    "static/js/2.32de0b22.chunk.js.LICENSE.txt": "/beldum-bot-site/static/js/2.32de0b22.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f9d6d915.js",
-    "static/js/2.bc830748.chunk.js",
-    "static/js/main.dfcfb078.chunk.js"
+    "static/js/2.32de0b22.chunk.js",
+    "static/js/main.26658791.chunk.js"
   ]
 }
