@@ -29,11 +29,20 @@ class KofiWidget extends React.Component {
 }
 
 class TopButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.scrollTop = this.scrollTop.bind(this);
+  }
+  
+  scrollTop() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+
   render() {
     return (
-      <a className="btn-sm" href="# " role="button">
+      <div type='button' className="btn-sm nostyle" onClick={this.scrollTop}>
         <i className="bi bi-arrow-up-circle fs-1 text-warning"></i>
-      </a>
+      </div>
     );
   }
 }
