@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
     title: 'Beldum Bot',
     description: 'Static website for Beldum-Bot, a Discord bot/application',
-    keywords: 'beldum, bot, discord, application',
+    keywords: 'beldum, bot, discord, application, serverless',
 }
 
 export default function RootLayout({ children }) {

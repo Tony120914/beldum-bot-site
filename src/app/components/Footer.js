@@ -1,48 +1,22 @@
-import React from 'react';
 
-class Footer extends React.Component {
-  render() {
+export default function Footer({ }) {
     return (
-      <div className='Footer p-5 bg-dark'>
-        <div className='container'>
-          <div className='row align-items-center'>
-            <div className='col-sm-3 my-2'>
-              <KofiWidget/>
+        <footer>
+            <div className="d-grid justify-content-end p-5">
+                <ScrollToTopButton />
             </div>
-            <div className='col-sm-8 my-2'></div>
-            <div className='col-sm-1 my-2'>
-              <TopButton/>
-            </div>
-          </div>
-        </div>
-      </div>
+        </footer>
     );
-  }
-} export default Footer;
-
-class KofiWidget extends React.Component {
-  render() {
-    return (
-      <a href='https://ko-fi.com/E1E06BU7C' target='_blank' rel='noreferrer'><img src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' height='48' alt='Buy Me a Coffee at ko-fi.com' /></a>
-    );
-  }
 }
 
-class TopButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.scrollTop = this.scrollTop.bind(this);
-  }
-  
-  scrollTop() {
+function ScrollToTop({}) {
     window.scrollTo({top: 0, behavior: 'smooth'});
-  }
+}
 
-  render() {
+function ScrollToTopButton({}) {
     return (
-      <div type='button' className="btn-sm nostyle" onClick={this.scrollTop}>
-        <i className="bi bi-arrow-up-circle fs-1 text-warning"></i>
-      </div>
+        <div type='button' className="btn-sm nostyle" onClick={ScrollToTop}>
+            <i className="bi bi-arrow-up-circle fs-1 text-warning"></i>
+        </div>
     );
-  }
 }

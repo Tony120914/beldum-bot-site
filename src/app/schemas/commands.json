@@ -1,0 +1,80 @@
+{
+    "schema": {
+        "commands": [
+            {
+                "command": "<command name>",
+                "usage": "<command usage>",
+                "example": "<example>",
+                "description": "<description>"
+            }
+        ]
+    },
+    "commands": [
+        {
+            "command": "8ball",
+            "usage": "/8ball <yes/no question>",
+            "example": "/8ball do you know the way?",
+            "description": "Ask a yes/no question."
+        },
+        {
+            "command": "cointoss",
+            "usage": "/cointoss",
+            "example": "/cointoss",
+            "description": "Toss a coin, heads or tails. (Fun fact: there's a 1/6000 chance of a coin landing on its edge.)"
+        },
+        {
+            "command": "help",
+            "usage": "/help",
+            "example": "/help",
+            "description": "Get information on the bot and how to use the bot."
+        },
+        {
+            "command": "info",
+            "usage": "/info bot\n/info channel\n/info emoji <emoji>\n/info role\n/info server\n/info user",
+            "example": "/info bot\n/info channel\n/info emoji :emoji:\n/info role\n/info server\n/info user",
+            "description": "Get Beldum Bot's information.\nGet the selected channel's information\nGet a custom emoji's information and image.\nGet the selected role's information and image.\nGet the server's information and images.\nGet the selected user's information and images."
+        },
+        {
+            "command": "ping",
+            "usage": "/ping",
+            "example": "/ping",
+            "description": "Check Beldum-Bot's ping."
+        },
+        {
+            "command": "reminder",
+            "usage": "/reminder",
+            "example": "/reminder",
+            "description": "Add/remove/manage reminders."
+        },
+        {
+            "command": "rng",
+            "usage": "/rng <int1> <int2>",
+            "example": "/rng 1 100",
+            "description": "Random number generator that rolls a random integer between two inputted integers (inclusive)"
+        },
+        {
+            "command": "rps",
+            "usage": "/rps",
+            "example": "/rps",
+            "description": "Play rock paper scissors with the bot."
+        },
+        {
+            "command": "Spongebob Mock",
+            "usage": "Right click message > Apps > Spongebob Mock",
+            "example": "We should take Bikini Bottom and push it somewhere else!\n\nwE sHoUlD tAkE bIkInI bOtToM aNd PuSh It SoMeWhErE eLsE!",
+            "description": "sPoNgEbOb MoCkS tHe TeXt Of A sElEcTeD mEsSaGe."
+        },
+        {
+            "command": "tictactoe",
+            "usage": "/tictactoe",
+            "example": "/tictactoe",
+            "description": "Play tic-tac-toe with another user (or with the bot if you dare...)"
+        },
+        {
+            "command": "urbandictionary",
+            "usage": "/urbandictionary <keywords>",
+            "example": "/urbandictionary tfti",
+            "description": "Search for an Urban Dictionary definition (it will return the top result)"
+        }
+    ]
+}
