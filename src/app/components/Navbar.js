@@ -7,16 +7,9 @@ export default function Navbar({  }) {
                     <NavbarBrand name={'Beldum Bot'} image={'assets/beldumBrand.png'} />
                     <NavbarToggler target={'navbarSupportedContent'} />
                     <NavbarButtons id={'navbarSupportedContent'} buttons= {[
-                        <a href="https://discord.com/oauth2/authorize?client_id=454764425090433034" target='_blank' key='invite_bot' className="btn btn-outline-primary ms-auto" role="button" aria-disabled="true">
-                            <i className="bi bi-discord me-2" style={{'fontSize':'20px'}}></i>
-                            Invite Bot
-                        </a>,
-                        <a href="https://github.com/Tony120914/Beldum-Bot" target='_blank' key='source_code' className="btn btn-outline-light ms-auto" role="button" aria-disabled="true">
-                            <i className="bi bi-github me-2" style={{'fontSize':'20px'}}></i>
-                            Source Code
-                        </a>,
-                        <a data-bs-toggle='modal' data-bs-target='#kofi-modal' type='button' target='_blank' key='kofi' className="ms-auto"><img height='44' src='https://storage.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>,
-                        <KofiModal key='kofi-modal' id={'kofi-modal'}/>
+                        <InviteButton key={'invite'}/>,
+                        <DonateButton key={'donate'}/>,
+                        <SourceCodeButton key={'sourceCode'}/>
                     ]}/>
                 </div>
             </nav>
@@ -51,6 +44,27 @@ function NavbarButtons({ id, buttons }) {
     )
 }
 
+function InviteButton({}) {
+    return (
+        <a href="https://discord.com/oauth2/authorize?client_id=454764425090433034" target='_blank' className="btn btn-outline-primary ms-auto" role="button" aria-disabled="true">
+            <i className="bi bi-discord me-2" style={{'fontSize':'20px'}}></i>
+            Invite Bot
+        </a>
+    );
+}
+
+function DonateButton({}) {
+    return (
+        <>
+            <a data-bs-toggle='modal' data-bs-target='#kofi-modal' type='button' target='_blank' className="btn btn-outline-danger ms-auto" role="button" aria-disabled="true">
+                <i className="bi bi-suit-heart-fill me-2" style={{'fontSize':'20px'}}></i>
+                Donate
+            </a>
+            <KofiModal id={'kofi-modal'}/>
+        </>
+    );
+}
+
 function KofiModal({ id }) {
     return (
         <div className="modal fade" id={id} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -67,4 +81,13 @@ function KofiModal({ id }) {
             </div>
         </div>
     )
+}
+
+function SourceCodeButton({}) {
+    return (
+        <a href="https://github.com/Tony120914/Beldum-Bot" target='_blank' className="btn btn-outline-light ms-auto" role="button" aria-disabled="true">
+            <i className="bi bi-github me-2" style={{'fontSize':'20px'}}></i>
+            Source Code
+        </a>
+    );
 }
