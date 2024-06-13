@@ -26,13 +26,43 @@
             "command": "help",
             "usage": "/help",
             "example": "/help",
-            "description": "Get information on the bot and how to use the bot."
+            "description": "Get information on the bot and resources on how to use the bot."
         },
         {
-            "command": "info",
-            "usage": "/info bot\n/info channel\n/info emoji <emoji>\n/info role\n/info server\n/info user",
-            "example": "/info bot\n/info channel\n/info emoji :emoji:\n/info role\n/info server\n/info user",
-            "description": "Get Beldum Bot's information.\nGet the selected channel's information\nGet a custom emoji's information and image.\nGet the selected role's information and image.\nGet the server's information and images.\nGet the selected user's information and images."
+            "command": "info bot",
+            "usage": "/info bot",
+            "example": "/info bot",
+            "description": "Get Beldum Bot's information and resources on how to use the bot."
+        },
+        {
+            "command": "info channel",
+            "usage": "/info channel",
+            "example": "/info channel",
+            "description": "Get the selected channel's information"
+        },
+        {
+            "command": "info emoji",
+            "usage": "/info emoji <emoji>",
+            "example": "/info emoji :emoji:",
+            "description": "Get a custom emoji's information and downloadable image with the highest possible size."
+        },
+        {
+            "command": "info role",
+            "usage": "/info role",
+            "example": "/info role",
+            "description": "Get the selected role's information and downloadable icon with the highest possible size."
+        },
+        {
+            "command": "info server",
+            "usage": "/info server",
+            "example": "/info server",
+            "description": "Get the server's information and downloadable icon/splash/banner with the highest possible size."
+        },
+        {
+            "command": "info user",
+            "usage": "/info user",
+            "example": "/info user",
+            "description": "Get the selected user's information and avatar/decoration/banner with the highest possible size."
         },
         {
             "command": "ping",

@@ -15,19 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-bs-theme='dark'>
         <head>
-            {/* Google tag (gtag.js) TODO */}
-            {/* <script async src="https://www.googletagmanager.com/gtag/js?id="/>
-            <script dangerouslySetInnerHTML=
-                {{__html:
-                    `window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', '');`
-                }}
-            /> */}
+            <meta name="google-site-verification" content="sT7zxJyHGIMTCNqwicuwD1VUve64S7T17tXwXiZQX9c" />
         </head>
-      <body className={inter.className}>{children}</body>
+        <body className={inter.className}>{children}</body>
     </html>
   )
 }

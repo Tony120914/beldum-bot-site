@@ -1,4 +1,4 @@
-import commands from '../schemas/commands.json';
+import commands from '../data/commands.json';
 
 export default function Commands({ }) {
     return (
