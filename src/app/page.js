@@ -23,7 +23,7 @@ export default function Home() {
         <>
             <Navbar />
             <main>
-                <div className='container'>
+                <div className='container mt-5'>
                     <Introduction />
                     <hr className='mb-5 mt-5'/>
                     <h1 className='display-6 text-warning text-center' id='commands'>Commands</h1>

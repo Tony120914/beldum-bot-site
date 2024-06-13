@@ -4,7 +4,7 @@ export default function Navbar({  }) {
         <>
             <nav className="navbar navbar-expand-md bg-body-tertiary mb-2">
                 <div className="container-fluid">
-                    <NavbarBrand name={'Beldum Bot'} image={'assets/beldumBrand.png'} />
+                    <NavbarBrand name={'Beldum Bot'} image={'assets/beldum-brand.png'} />
                     <NavbarToggler target={'navbarSupportedContent'} />
                     <NavbarButtons id={'navbarSupportedContent'} buttons= {[
                         <InviteButton key={'invite'}/>,
