@@ -2,7 +2,7 @@ import commands from '../schemas/commands.json';
 
 export default function Commands({ }) {
     return (
-        <div className='table-responsive' style={{width:'75%', margin:'auto'}}>
+        <div className='table-responsive mx-auto' style={{'maxWidth': '1000px'}}>
             <table className='table table-striped table-hover table-sm'>
                 <thead>
                     <tr>
