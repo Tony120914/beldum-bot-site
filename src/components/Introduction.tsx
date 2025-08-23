@@ -30,7 +30,7 @@ export default function Introduction({ }) {
 
 function BeldumSpriteAnimated({}) {
     return (
-    <img src='assets/beldum-sprite-animated.gif' className='img-fluid' alt='Beldum sprite' width='40%'></img>
+    <img src='assets/shiny-beldum-oras-promo.png' className='img-fluid' alt='Shiny Beldum Promo' ></img>
     );
 }
 
@@ -50,7 +50,7 @@ function BotIntroduction({}) {
 
 function TopggWidget({}) {
     return (
-    <img src="https://top.gg/api/widget/454764425090433034.svg" className="img-fluid" alt="Topgg widget showing server count" width='65%'></img>
+    <img src="https://top.gg/api/widget/454764425090433034.svg" className="img-fluid" alt="Topgg widget showing server count" width='45%'></img>
     );
 }
 
@@ -66,7 +66,7 @@ function PopularityIntroduction({}) {
 
 function CloudflareWorkersLogo({}) {
     return (
-    <img src='assets/cloudflare-workers-logo.svg' className='img-fluid' alt='Cloudflare Workers Logo' width='70%'></img>
+    <img src='assets/cloudflare-workers-logo.svg' className='img-fluid' alt='Cloudflare Workers Logo' width='45%'></img>
     );
 }
 
