@@ -1,8 +1,9 @@
+import { NavLink } from "react-router"
 
 export default function Navbar() {
     return (
     <>
-        <nav className="navbar navbar-expand-md bg-dark-subtle mb-2">
+        <nav className="navbar navbar-expand-md bg-dark-subtle">
             <div className="container-fluid">
                 <NavbarBrand name={'Beldum Bot'} image={'assets/shiny-beldum-bw.gif'} />
                 <NavbarToggler target={'navbarButtons'} />
@@ -37,10 +38,12 @@ export default function Navbar() {
 
 function NavbarBrand({ name, image }) {
     return (
-    <a className="navbar-brand user-select-none d-flex align-items-center" href=''>
-        <img src={image} alt="Logo" width="40" height="40" className='.d-inline-block mx-2'/>
-        <span className="display-6 text-warning">{name}</span>
-    </a>
+    <NavLink to='/' end onClick={() => window.scrollTo({top:0, behavior:'smooth'}) } style={{ textDecoration:'none' }}>
+        <span className="navbar-brand user-select-none d-flex align-items-center">
+            <img src={image} alt="Logo" width="40" height="40" className='.d-inline-block mx-2'/>
+            <span className="display-6 text-warning">{name}</span>
+        </span>
+    </NavLink>
     )
 }
 

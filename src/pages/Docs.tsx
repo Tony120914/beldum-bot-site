@@ -1,0 +1,18 @@
+import Navbar from '../components/Navbar';
+import Commands from '../components/docs/Commands';
+
+export default function Docs() {
+    return (
+    <>
+        <header className='sticky-top'>
+            <Navbar />
+        </header>
+        <div className='container-fluid mt-3'>
+            <main>
+                <h1 className='display-6 text-warning text-center'>Commands</h1>
+                <Commands />
+            </main>
+        </div>
+    </>
+    )
+}

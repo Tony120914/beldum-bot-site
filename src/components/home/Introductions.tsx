@@ -1,5 +1,6 @@
+import { NavLink } from "react-router";
 
-export default function Introduction({ }) {
+export default function Introductions({ }) {
     return (
     <>
         <div className='row align-items-center justify-content-evenly my-5'>
@@ -14,7 +15,7 @@ export default function Introduction({ }) {
             <div className='col-lg-6 col-xxl-5 text-center'>
                 <PopularityIntroduction />
             </div>
-            <hr className="d-lg-none my-5" style={{ width:'80%' }}></hr>
+            <hr className="d-lg-none my-5" style={{ width:'80%' }} />
             <div className='col-lg-6 col-xxl-5 text-center'>
                 <ServerlessIntroduction />
             </div>
@@ -37,7 +38,9 @@ function BotIntroduction({}) {
         <p className="lead">Check it out. ¯\_(ツ)_/¯</p>
         <div className='d-flex gap-2 justify-content-center justify-content-md-start'>
             <a className="btn btn-lg btn-outline-warning" role="button" target='_blank' rel='noreferrer' href='https://discord.com/oauth2/authorize?client_id=454764425090433034'>Invite Bot</a>
-            <a className='btn btn-lg btn-outline-warning' onClick={() => document.getElementById('commands').scrollIntoView()}>See Commands</a>
+            <NavLink to='/docs' end onClick={() => window.scrollTo({top:0, behavior:'smooth'}) }>
+                <button className='btn btn-lg btn-outline-warning'>See Commands</button>
+            </NavLink>
         </div>
     </>
     );
