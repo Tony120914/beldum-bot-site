@@ -2,13 +2,14 @@ import type React from "react"
 import { NavLink } from "react-router"
 
 export default function Navbar() {
+    const navbarToggerId = 'navbarButtons';
     return (
     <>
         <nav className="navbar navbar-expand-md bg-dark-subtle">
             <div className="container-fluid">
-                <NavbarBrand name={'Beldum Bot'} image={'assets/shiny-beldum-bw.gif'} />
-                <NavbarToggler target={'navbarButtons'} />
-                <NavbarButtons id={'navbarButtons'} buttons= {[
+                <NavbarBrand image={'assets/shiny-beldum-bw.gif'} />
+                <NavbarToggler target={navbarToggerId} />
+                <NavbarButtons id={navbarToggerId} buttons= {[
                     <NavbarButton
                         type={'btn-outline-primary'}
                         text={'Invite Bot'}
@@ -37,12 +38,12 @@ export default function Navbar() {
     )
 }
 
-function NavbarBrand({ name, image }: { name: string, image: string}) {
+function NavbarBrand({ image }: { image: string}) {
     return (
     <NavLink to='/' end onClick={() => window.scrollTo({top:0, behavior:'smooth'}) } style={{ textDecoration:'none' }}>
         <span className="navbar-brand user-select-none d-flex align-items-center">
             <img src={image} alt="Logo" width="40" height="40" className='.d-inline-block mx-2'/>
-            <span className="display-6 text-warning">{name}</span>
+            <span className="display-6 text-warning">Beldum Bot</span>
         </span>
     </NavLink>
     )

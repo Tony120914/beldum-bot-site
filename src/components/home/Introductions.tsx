@@ -5,7 +5,8 @@ export default function Introductions({ }) {
     <>
         <div className='row align-items-center justify-content-evenly my-5'>
             <div className='col-md-5 text-center'>
-                <ShinyBeldumImage />
+                <PromoImage image={'assets/shiny-beldum-oras-promo.png'} alt={'Shiny Beldum Promo'}
+                />
             </div>
             <div className='col-md-5 text-center text-md-start'>
                 <BotIntroduction />
@@ -24,9 +25,9 @@ export default function Introductions({ }) {
     );
 }
 
-function ShinyBeldumImage({}) {
+function PromoImage({ image, alt }: { image: string, alt: string }) {
     return (
-        <img src='assets/shiny-beldum-oras-promo.png' className='img-fluid' alt='Shiny Beldum Promo' ></img>
+        <img src={image} className='img-fluid' alt={alt} ></img>
     );
 }
 
