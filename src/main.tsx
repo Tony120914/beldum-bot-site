@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { HashRouter, Routes, Route } from "react-router";
 import './scss/styles.scss'
+import './css/styles.css'
 import 'bootstrap'
 import 'bootstrap-icons/font/bootstrap-icons.min.css'
 import Home from './pages/Home.jsx';

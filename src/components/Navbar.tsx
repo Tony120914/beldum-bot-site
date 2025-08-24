@@ -40,9 +40,9 @@ export default function Navbar() {
 
 function NavbarBrand({ image }: { image: string}) {
     return (
-    <NavLink to='/' end onClick={() => window.scrollTo({top:0, behavior:'smooth'}) } style={{ textDecoration:'none' }}>
+    <NavLink to='/' end onClick={() => window.scrollTo({top:0, behavior:'smooth'}) } style={{ textDecoration:'none' }} viewTransition>
         <span className="navbar-brand user-select-none d-flex align-items-center">
-            <img src={image} alt="Logo" width="40" height="40" className='.d-inline-block mx-2'/>
+            <img src={image} alt="Beldum Logo" width="40" height="40" className='.d-inline-block mx-2'/>
             <span className="display-6 text-warning">Beldum Bot</span>
         </span>
     </NavLink>

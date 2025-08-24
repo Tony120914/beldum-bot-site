@@ -39,7 +39,7 @@ function BotIntroduction({}) {
         <p className="lead">Check it out. ¯\_(ツ)_/¯</p>
         <div className='d-flex gap-2 justify-content-center justify-content-md-start'>
             <a className="btn btn-lg btn-outline-warning" role="button" target='_blank' rel='noreferrer' href='https://discord.com/oauth2/authorize?client_id=454764425090433034'>Invite Bot</a>
-            <NavLink to='/docs' end onClick={() => window.scrollTo({top:0, behavior:'smooth'}) }>
+            <NavLink to='/docs' end onClick={() => window.scrollTo({top:0, behavior:'smooth'}) } viewTransition >
                 <button className='btn btn-lg btn-outline-warning'>See Commands</button>
             </NavLink>
         </div>
