@@ -4,8 +4,8 @@ import { HashRouter, Routes, Route } from "react-router";
 import './scss/styles.scss'
 import 'bootstrap'
 import 'bootstrap-icons/font/bootstrap-icons.min.css'
-import Home from './pages/Home.tsx'
-import Docs from './pages/Docs.tsx';
+import Home from './pages/Home.jsx';
+import Docs from './pages/Docs.jsx';
 
 const root = document.getElementById('root');
 if (!root) throw new Error("root missing in index.html");

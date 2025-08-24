@@ -1,5 +1,5 @@
-import Navbar from '../components/Navbar';
-import Commands from '../components/docs/Commands';
+import Navbar from '../components/Navbar.jsx';
+import Commands from '../components/docs/Commands.jsx';
 
 export default function Docs() {
     return (

@@ -1,5 +1,5 @@
-import Navbar from '../components/Navbar';
-import Introductions from '../components/home/Introductions';
+import Navbar from '../components/Navbar.jsx';
+import Introductions from '../components/home/Introductions.jsx';
 
 export default function Home() {
     return (

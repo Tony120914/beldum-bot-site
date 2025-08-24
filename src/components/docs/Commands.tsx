@@ -1,5 +1,4 @@
-// import Footer from './components/Footer';
-import commands from '../../data/commands.json';
+import commands from '../../data/commands.json' with { type: 'json'};
 
 export default function Commands({ }) {
     return (

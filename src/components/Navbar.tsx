@@ -1,3 +1,4 @@
+import type React from "react"
 import { NavLink } from "react-router"
 
 export default function Navbar() {
@@ -36,7 +37,7 @@ export default function Navbar() {
     )
 }
 
-function NavbarBrand({ name, image }) {
+function NavbarBrand({ name, image }: { name: string, image: string}) {
     return (
     <NavLink to='/' end onClick={() => window.scrollTo({top:0, behavior:'smooth'}) } style={{ textDecoration:'none' }}>
         <span className="navbar-brand user-select-none d-flex align-items-center">
@@ -47,7 +48,7 @@ function NavbarBrand({ name, image }) {
     )
 }
 
-function NavbarToggler({ target }) {
+function NavbarToggler({ target }: { target: string }) {
     return (
     <button className="navbar-toggler mb-2 mt-2 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target={`#${target}`} aria-controls={target} aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -55,7 +56,7 @@ function NavbarToggler({ target }) {
     )
 }
 
-function NavbarButtons({ id, buttons }) {
+function NavbarButtons({ id, buttons }: { id: string, buttons: React.ReactElement[] }) {
     return (
     <div className="collapse navbar-collapse" id={id}>
         <div className="navbar-nav ms-auto mb-2 mt-2 mb-lg-0 gap-3 user-select-none">
@@ -65,7 +66,7 @@ function NavbarButtons({ id, buttons }) {
     )
 }
 
-function NavbarButton({ type, text, iconName, url }) {
+function NavbarButton({ type, text, iconName, url }: { type: string, text: string, iconName: string, url: string }) {
     return (
     <a href={url} target='_blank' className={`btn ${type} ms-auto pt-2`} role="button" aria-disabled="true">
         <i className={`bi ${iconName} me-2`} style={{'fontSize':'16px'}}></i>
