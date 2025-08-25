@@ -22,7 +22,7 @@ export default function Commands({ }) {
     }
 
     return (
-    <div className='table-responsive mx-auto' style={{'maxWidth': '1000px'}}>
+    <div className='table-responsive mx-auto mb-5' style={{'maxWidth': '1000px'}}>
         <TableTitle title={'Commands'} image={'assets/shiny-beldum-swsh.gif'} />
         <table className='table table-striped table-hover'>
             <thead>
