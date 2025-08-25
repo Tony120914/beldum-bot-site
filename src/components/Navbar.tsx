@@ -2,14 +2,12 @@ import type React from "react"
 import { NavLink } from "react-router"
 
 export default function Navbar() {
-    const navbarToggerId = 'navbarButtons';
     return (
     <>
         <nav className="navbar navbar-expand-md bg-dark-subtle">
             <div className="container-fluid">
                 <NavbarBrand image={'assets/shiny-beldum-bw.gif'} />
-                <NavbarToggler target={navbarToggerId} />
-                <NavbarButtons id={navbarToggerId} buttons= {[
+                <NavbarButtons buttons= {[
                     <NavbarButton
                         type={'btn-outline-primary'}
                         text={'Invite Bot'}
@@ -49,22 +47,20 @@ function NavbarBrand({ image }: { image: string}) {
     )
 }
 
-function NavbarToggler({ target }: { target: string }) {
+function NavbarButtons({ buttons }: { buttons: React.ReactElement[] }) {
+    const navbarToggerId = 'navbarButtons';
     return (
-    <button className="navbar-toggler mb-2 mt-2 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target={`#${target}`} aria-controls={target} aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-    </button>
-    )
-}
-
-function NavbarButtons({ id, buttons }: { id: string, buttons: React.ReactElement[] }) {
-    return (
-    <div className="collapse navbar-collapse" id={id}>
-        <div className="navbar-nav ms-auto mb-2 mt-2 mb-lg-0 gap-3 user-select-none">
-            {buttons}
+    <>
+        <button className="navbar-toggler mb-2 mt-2 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target={`#${navbarToggerId}`} aria-controls={navbarToggerId} aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id={navbarToggerId}>
+            <div className="navbar-nav ms-auto mb-2 mt-2 mb-lg-0 gap-3 user-select-none">
+                {buttons}
+            </div>
         </div>
-    </div>
-    )
+    </>
+    );
 }
 
 function NavbarButton({ type, text, iconName, url }: { type: string, text: string, iconName: string, url: string }) {
