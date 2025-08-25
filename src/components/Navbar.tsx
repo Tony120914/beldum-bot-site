@@ -48,13 +48,13 @@ function NavbarBrand({ image }: { image: string}) {
 }
 
 function NavbarButtons({ buttons }: { buttons: React.ReactElement[] }) {
-    const navbarToggerId = 'navbarButtons';
+    const navbarTogglerId = 'navbarButtons';
     return (
     <>
-        <button className="navbar-toggler mb-2 mt-2 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target={`#${navbarToggerId}`} aria-controls={navbarToggerId} aria-expanded="false" aria-label="Toggle navigation">
+        <button className="navbar-toggler mb-2 mt-2 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target={`#${navbarTogglerId}`} aria-controls={navbarTogglerId} aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id={navbarToggerId}>
+        <div className="collapse navbar-collapse" id={navbarTogglerId}>
             <div className="navbar-nav ms-auto mb-2 mt-2 mb-lg-0 gap-3 user-select-none">
                 {buttons}
             </div>

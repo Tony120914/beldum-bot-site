@@ -9,7 +9,6 @@ export default function Docs() {
         </header>
         <div className='container-fluid mt-3'>
             <main>
-                <h1 className='display-6 text-warning text-center'>Commands</h1>
                 <Commands />
             </main>
         </div>

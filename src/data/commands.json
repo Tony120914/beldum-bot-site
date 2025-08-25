@@ -13,7 +13,7 @@
         {
             "command": "8ball",
             "usage": "/8ball <yes/no question>",
-            "example": "/8ball do you know the way?",
+            "example": "/8ball will I ever be happy?",
             "description": "Ask a yes/no question."
         },
         {
@@ -91,7 +91,7 @@
         {
             "command": "Spongebob Mock",
             "usage": "Right click message > Apps > Spongebob Mock",
-            "example": "We should take Bikini Bottom and push it somewhere else!\n\nwE sHoUlD tAkE bIkInI bOtToM aNd PuSh It SoMeWhErE eLsE!",
+            "example": "Right click message > Apps > Spongebob Mock",
             "description": "sPoNgEbOb MoCkS tHe TeXt Of A sElEcTeD mEsSaGe."
         },
         {
@@ -103,7 +103,7 @@
         {
             "command": "urbandictionary",
             "usage": "/urbandictionary <keywords>",
-            "example": "/urbandictionary tfti",
+            "example": "/urbandictionary sus",
             "description": "Search for an Urban Dictionary definition (it will return the top result)"
         }
     ]
