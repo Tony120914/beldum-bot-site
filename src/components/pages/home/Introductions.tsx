@@ -53,7 +53,9 @@ function PopularityIntroduction({}) {
         <img src="https://top.gg/api/widget/454764425090433034.svg" className="img-fluid" alt="Top.gg widget's real time server count" ></img>
         <h1 className='display-6 text-warning mt-4'>7000+ Communities</h1>
         <p className='lead'>Help the bot grow on Discord.</p>
-        <a className="btn btn-lg btn-outline-warning" role="button" target='_blank' rel='noreferrer' href='https://top.gg/bot/454764425090433034/vote'>Vote on Top.gg</a>
+        <NavLink to='/vote' end onClick={() => window.scrollTo({top:0, behavior:'smooth'}) } viewTransition >
+            <button className='btn btn-lg btn-outline-warning'>Vote Daily!</button>
+        </NavLink>
     </>
     );
 }
@@ -61,7 +63,7 @@ function PopularityIntroduction({}) {
 function ServerlessIntroduction({}) {
     return (
     <>
-        <img src='assets/cloudflare-workers-logo.svg' className='img-fluid' alt='Cloudflare Workers Logo' width='50%'></img>
+        <img src='assets/cloudflare-workers-logo.svg' className='img-fluid' alt='Cloudflare Workers Logo' width='350'></img>
         <h1 className='display-6 text-warning mt-4'>Serverless</h1>
         <p className='lead'>...that technically still uses servers.</p>
         <p className="lead">But on demand.</p>

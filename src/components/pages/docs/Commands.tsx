@@ -1,4 +1,4 @@
-import commands from '../../data/commands.json' with { type: 'json'};
+import commands from '../../../data/commands.json' with { type: 'json'};
 
 export default function Commands({ }) {
     const getCommandRows = () => {
@@ -23,7 +23,7 @@ export default function Commands({ }) {
 
     return (
     <div className='table-responsive mx-auto mb-5' style={{'maxWidth': '1000px'}}>
-        <TableTitle title={'Commands'} image={'assets/shiny-beldum-swsh.gif'} />
+        <CommandsTableTitle title={'Commands'} image={'assets/shiny-beldum-swsh.gif'} />
         <table className='table table-striped table-hover'>
             <thead>
                 <tr>
@@ -40,13 +40,11 @@ export default function Commands({ }) {
     );
 }
 
-function TableTitle({ title, image }: { title: string, image: string }) {
+function CommandsTableTitle({ title, image }: { title: string, image: string }) {
     return (
-    <div className='d-flex gap-3'>
+    <div className='d-sm-flex gap-3'>
         <h1 className='display-5 text-warning'>{title}</h1>
-        <div className='align-self-center'>
-            <img src={image} className='img-fluid' width={'30%'} ></img>
-        </div>
+        <img src={image} className='img-fluid' width='66' ></img>
     </div>
     );
 }

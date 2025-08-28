@@ -1,11 +1,15 @@
 import type React from "react"
 import { NavLink } from "react-router"
 
-export default function Navbar() {
+interface NavBarI {
+    back?: React.ReactElement;
+}
+export default function Navbar( { back }: NavBarI ) {
     return (
     <>
         <nav className="navbar navbar-expand-md bg-dark-subtle">
             <div className="container-fluid">
+                {back}
                 <NavbarBrand image={'assets/shiny-beldum-bw.gif'} />
                 <NavbarButtons buttons= {[
                     <NavbarButton
@@ -15,11 +19,11 @@ export default function Navbar() {
                         url={'https://discord.com/oauth2/authorize?client_id=454764425090433034'}
                         key={'invite'}
                     />,
-                    <NavbarButton
+                    <NavbarRouteButton
                         type={'btn-outline-danger'}
                         text={'Donate'}
                         iconName={'bi-suit-heart-fill'}
-                        url={'https://patreon.com/ToekneeL'}
+                        to={'/donate'}
                         key={'donate'}
                     />,
                     <NavbarButton
@@ -65,9 +69,20 @@ function NavbarButtons({ buttons }: { buttons: React.ReactElement[] }) {
 
 function NavbarButton({ type, text, iconName, url }: { type: string, text: string, iconName: string, url: string }) {
     return (
-    <a href={url} target='_blank' className={`btn ${type} ms-auto pt-2`} role="button" aria-disabled="true">
+    <a href={url} className={`btn ${type} ms-auto pt-2`} role="button" target='_blank' aria-disabled="true">
         <i className={`bi ${iconName} me-2`} style={{'fontSize':'16px'}}></i>
         {text}
     </a>
+    );
+}
+
+function NavbarRouteButton({ type, text, iconName, to }: { type: string, text: string, iconName: string, to: string }) {
+    return (
+    <NavLink to={to} end onClick={() => window.scrollTo({top:0, behavior:'smooth'}) } className="text-end" style={{ textDecoration:'none' }} viewTransition>
+        <button className={`btn ${type} ms-auto pt-2`} role="button" aria-disabled="true">
+            <i className={`bi ${iconName} me-2`} style={{'fontSize':'16px'}}></i>
+            {text}
+        </button>
+    </NavLink>
     );
 }

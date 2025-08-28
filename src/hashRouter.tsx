@@ -1,6 +1,10 @@
 import { createHashRouter } from "react-router";
-import Home from './pages/Home.jsx';
-import Docs from './pages/Docs.jsx';
+import Docs from "./components/pages/Docs.js";
+import Donate from "./components/pages/Donate.js";
+import Home from "./components/pages/Home.js";
+import Vote from "./components/pages/Vote.js";
+
+
 
 const hashRouter = createHashRouter([
     {
@@ -10,6 +14,14 @@ const hashRouter = createHashRouter([
     {
         path: '/docs',
         element: <Docs />
+    },
+    {
+        path: '/donate',
+        element: <Donate />
+    },
+    {
+        path: '/vote',
+        element: <Vote />
     },
 ]);
 
