@@ -1,6 +1,6 @@
 import commands from '../../../data/commands.json' with { type: 'json'};
 
-export default function Commands({ }) {
+export default function CommandsTable({ }) {
     const getCommandRows = () => {
         const rows = [];
         const cmds = commands.commands;
@@ -8,7 +8,7 @@ export default function Commands({ }) {
             const cmd = cmds[i];
             if (!cmd) continue;
             rows.push(
-                <tr key={cmd.command} style={{'whiteSpace': 'pre-line'}}>
+                <tr className='text-break' key={cmd.command} style={{'whiteSpace': 'pre-line'}}>
                     <td>{cmd.command}</td>
                     <td>
                         <div><code>{cmd.usage}</code></div>
@@ -23,12 +23,12 @@ export default function Commands({ }) {
 
     return (
     <div className='table-responsive mx-auto mb-5' style={{'maxWidth': '1000px'}}>
-        <CommandsTableTitle title={'Commands'} image={'assets/shiny-beldum-swsh.gif'} />
+        <TableTitle title={'Commands'} image={'assets/shiny-beldum-swsh.gif'} />
         <table className='table table-striped table-hover'>
             <thead>
                 <tr>
-                    <th scope="col" className='col-1'>Command</th>
-                    <th scope="col" className='col-3'>Usage</th>
+                    <th scope="col" className='col-2'>Command</th>
+                    <th scope="col" className='col-5'>Usage</th>
                     <th scope="col" className='col-5'>Description</th>
                 </tr>
             </thead>
@@ -40,7 +40,7 @@ export default function Commands({ }) {
     );
 }
 
-function CommandsTableTitle({ title, image }: { title: string, image: string }) {
+function TableTitle({ title, image }: { title: string, image: string }) {
     return (
     <div className='d-sm-flex gap-3'>
         <h1 className='display-5 text-warning'>{title}</h1>
