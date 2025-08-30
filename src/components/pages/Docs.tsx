@@ -8,7 +8,7 @@ export default function Docs() {
         <header className='sticky-top'>
             <Navbar back={<BackButton to='/'/>} />
         </header>
-        <div className='container-fluid mt-3'>
+        <div className='container mt-3'>
             <main>
                 <CommandsTable />
             </main>

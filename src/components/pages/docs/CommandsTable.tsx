@@ -1,7 +1,7 @@
 import commands from '../../../data/commands.json' with { type: 'json'};
 
 export default function CommandsTable({ }) {
-    const getCommandRows = () => {
+    function buildCommandRows() {
         const rows = [];
         const cmds = commands.commands;
         for (let i = 0; i < cmds.length; i++) {
@@ -22,8 +22,8 @@ export default function CommandsTable({ }) {
     }
 
     return (
-    <div className='table-responsive mx-auto mb-5' style={{'maxWidth': '1000px'}}>
-        <TableTitle title={'Commands'} image={'assets/shiny-beldum-swsh.gif'} />
+    <div className='table-responsive mx-auto mb-5'>
+        <h1 className='display-5 text-warning'>Commands</h1>
         <table className='table table-striped table-hover'>
             <thead>
                 <tr>
@@ -33,18 +33,9 @@ export default function CommandsTable({ }) {
                 </tr>
             </thead>
             <tbody className='table-group-divider' style={{'borderTopColor':'gold'}}>
-                {getCommandRows()}
+                {buildCommandRows()}
             </tbody>
         </table>
-    </div>
-    );
-}
-
-function TableTitle({ title, image }: { title: string, image: string }) {
-    return (
-    <div className='d-sm-flex gap-3'>
-        <h1 className='display-5 text-warning'>{title}</h1>
-        <img src={image} className='img-fluid' width='66' ></img>
     </div>
     );
 }

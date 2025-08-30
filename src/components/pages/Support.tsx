@@ -10,7 +10,7 @@ export default function Support({ }) {
         <header className='sticky-top'>
             <Navbar back={<BackButton to='/'/>} />
         </header>
-        <div className='container-fluid mt-3'>
+        <div className='container mt-3'>
             <main className="text-center">
                 <Gratitude image={'assets/shiny-beldum-swsh.gif'} />
                 <Option title={'Donate'} icon={'bi-balloon-heart'}

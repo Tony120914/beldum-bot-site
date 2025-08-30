@@ -7,7 +7,7 @@ export default function Gratitude({ image }: {image: string}) {
             <i className="bi bi-suit-heart-fill" style={{ 'fontSize':'30px', 'color':"pink" }}></i>
             <i className="bi bi-suit-heart-fill ms-1" style={{ 'fontSize':'15px', 'color':"pink" }}></i>
             <i className="bi bi-suit-heart-fill" style={{ 'fontSize':'50px', 'color':"pink" }}></i>
-            <img src={image} className='img-fluid'></img>
+            <img src={image} className='img-fluid' width='auto'></img>
         </div>
     </>
     );
