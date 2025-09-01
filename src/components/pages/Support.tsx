@@ -13,7 +13,7 @@ export default function Support({ }) {
         <div className='container mt-3'>
             <main className="text-center">
                 <Gratitude image={'assets/shiny-beldum-swsh.gif'} />
-                <Option title={'Donate'} icon={'bi-balloon-heart'}
+                <Option title={'Donate'} icon={'bi-heart'}
                     buttons={[
                         <Button key={'patreon'}
                             url={'https://patreon.com/ToekneeL'}
