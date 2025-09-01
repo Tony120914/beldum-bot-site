@@ -1,4 +1,4 @@
-import commands from '../../../data/commands.json' with { type: 'json'};
+import commands from './commands.json' with { type: 'json'};
 
 export default function CommandsTable({ }) {
     function buildCommandRows() {
