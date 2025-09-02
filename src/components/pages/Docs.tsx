@@ -6,7 +6,7 @@ export default function Docs() {
     return (
     <>
         <header className='sticky-top'>
-            <Navbar back={<BackButton to='/'/>} />
+            <Navbar backButton={<BackButton to='/'/>} />
         </header>
         <div className='container mt-3'>
             <main>
